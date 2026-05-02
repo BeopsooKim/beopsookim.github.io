@@ -2,6 +2,7 @@
 layout: default
 title: News
 navbar_title: News
+permalink: /news/
 ---
 
 {% assign news_by_year = site.news | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
