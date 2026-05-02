@@ -1,0 +1,76 @@
+---
+layout: default
+title : Publications
+navbar_title: Publications
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+---
+
+{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+<h1 class="pt-4">Journal Articles</h1>
+<div class="row">
+    <div class="col-12 col-lg-10">
+        {% for year in pubs_by_year %}
+        {% assign num_papers = year.items | size %}
+        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in year.items %}
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+            {% for year in pubs_by_year %}
+            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+<h1 class="pt-4">Manuscripts in Preparation/Submission</h1>
+<div class="my-0 p-4 bg-white shadow-sm rounded-xl">
+    <ol class="mb-0">
+        <li>(Under review) <strong>Beopsoo Kim</strong>, Changhyun Chung, Hyoungkwon Kim, Dong-jin Yoon, Dongchan Joo, Joohan Lee, Wangeun Ji, and Insu Kim, "Estimation of Distribution System Parameters Using a Programmable Logic Controller and Kalman Filtering."</li>
+        <li>(Under review) <strong>Beopsoo Kim</strong> and Insu Kim, "Quantifying and Mitigating Voltage Collapse Under Severe Phase Unbalance Using Standard Distributed Energy Resources: A Sarawak Microgrid Case Study."</li>
+        <li>(Under review) <strong>Beopsoo Kim</strong> and Insu Kim, "Real-Time Robust VPP Scheduling under Forecast Uncertainty: A Tensor-Based Parallel MCTS Approach."</li>
+        <li><strong>Beopsoo Kim</strong>, Changhyun Chung, Hyoungkwon Kim, Dong-jin Yoon, Dongchan Joo, Joohan Lee, and Insu Kim, "Data-Driven Optimization of Autonomous PV-ESS Systems in Antarctica: A Case Study from Jang Bogo Station."</li>
+        <li><strong>Beopsoo Kim</strong> and Insu Kim, "Assessing Uncertainty in Heuristic-Based DG Optimization: A Statistical Causal Inference Approach."</li>
+    </ol>
+</div>
+
+<h1 class="pt-4">Refereed Conference Proceedings</h1>
+<div class="my-0 p-4 bg-white shadow-sm rounded-xl">
+    <ol class="mb-0">
+        <li><strong>Beopsoo Kim</strong>, Nikita Rusetskii, Denis Sidorov, and Insu Kim, "Impact of Greedy Energy Storage Operation on Power System Stability: A Prosumer-Centric Approach," 2025 International Conference on Electrical Machines and Systems, Busan, Korea, 2025.</li>
+        <li><strong>Beopsoo Kim</strong> and Insu Kim, "The Implementation of Sequential Hybrid AC-DC Power Flow Method," 2025 56th KIEE Summer Conference, Busan, Korea, 2025, in Korean.</li>
+        <li>Soo-Young Kim, Seong-Ho Jeong, <strong>Beopsoo Kim</strong>, and Insu Kim, "Review of The Impact of Climate Change and Disaster on Power Systems," 2025 56th KIEE Summer Conference, Busan, Korea, 2025, in Korean.</li>
+        <li><strong>Beopsoo Kim</strong> and Insu Kim, "A Study of Synchronous Generator Control Using Lyapunov's Function Based Controller," IEEE PES General Meeting 2023 Student Poster Session, Orlando, USA, 2023.</li>
+        <li><strong>Beopsoo Kim</strong> and Insu Kim, "Speed up Power Flow Analysis Calculations with CUDA-based GPU Computing," 2023 54th KIEE Summer Conference, Gangwon-do, Korea, 2023, in Korean.</li>
+        <li>Seonghyeon Kim, Byeongha Kim, Jaehan Kim, Hwanjin Kim, Seonggu Pak, <strong>Beopsoo Kim</strong>, Insu Kim, Youngpyo Hong, and Dohyung Kim, "The Control Strategy of Renewable Energy-based Microgrid Using C/C++ Language-based Programmable Logic Controller," 2023 54th KIEE Summer Conference, Gangwon-do, Korea, 2023, in Korean.</li>
+        <li>JaeYoung Jung, SeongEun Hong, ChanKoo Lee, <strong>Beopsoo Kim</strong>, and Insu Kim, "A Study of Distributed Generator and Three-winding Transformers Impact Analysis on Power Grid Fault Current Using MATLAB," 2023 54th KIEE Summer Conference, Gangwon-do, Korea, 2023, in Korean.</li>
+        <li>Seungjin Lim, <strong>Beopsoo Kim</strong>, Yonghee Lee, and Insu Kim, "A Study on The Verification of A Circuit Breaker Control System for Distribution Networks," 2022 KIEE A Group Autumn Conference, Daejeon, Korea, 2022, in Korean.</li>
+        <li><strong>Beopsoo Kim</strong> and Insu Kim, "A Case Study of Stand-Alone Hybrid Power Systems for A Data Center Using HOMER and DIgSILENT," CPESE 2022, Kyoto, Japan, 2022.</li>
+        <li><strong>Beopsoo Kim</strong> and Insu Kim, "A Concept of Renewable Energy-based Rural Area Stand-alone Microgrid Design," 2022 53rd KIEE Summer Conference, Yeosu, Korea, 2022, in Korean.</li>
+        <li><strong>Beopsoo Kim</strong> and Insu Kim, "A Study of ESS Effect in Case of Distribution System Fault Using EMTP-RV," 2022 53rd KIEE Summer Conference, Yeosu, Korea, 2022, in Korean.</li>
+        <li><strong>Beopsoo Kim</strong>, Jaeyeon Park, and Insu Kim, "A Study of Public Museum Power System Operation Economical Analysis Using HOMER," 2022 53rd KIEE Summer Conference, Yeosu, Korea, 2022, in Korean.</li>
+        <li>Yeo-Jin Ha, Go-eun Son, <strong>Beopsoo Kim</strong>, and Insu Kim, "A Concept of A Microgrid Analysis Platform Using HOMER and Tableau," 2022 53rd KIEE Summer Conference, Yeosu, Korea, 2022, in Korean.</li>
+        <li>Jeong-Hwan Yang, Duck-Hee Chung, Bo-Kyung Sung, <strong>Beopsoo Kim</strong>, and Insu Kim, "Analysis of the Unbalanced Rate of Scott Transformers using OpenDSS," 2022 53rd KIEE Summer Conference, Yeosu, Korea, 2022, in Korean.</li>
+        <li>Chan-Kyu Shin, Seung-Youp Ham, Chi-Woong Ahn, <strong>Beopsoo Kim</strong>, and Insu Kim, "A Study on The Algorithm for Building The Bus Impedance Matrix and The Effect of Distributed Generation on Short-circuit Currents Using Python," 2022 53rd KIEE Summer Conference, Yeosu, Korea, 2022, in Korean.</li>
+        <li><strong>Beopsoo Kim</strong>, Dayeon Jeon, and Insu Kim, "A Study of Wind Fault Detection Using Artificial Intelligence," ICEE 2022, Seoul, Korea, 2022.</li>
+        <li><strong>Beopsoo Kim</strong>, Dayoung Lee, Nikita Rusetskii, Konstantin Shusterzon, Denis Sidorov, Minseok Song, and Insu Kim, "A Study on The Effect of Energy Storage System Optimal Operation with Distributed Generators on System Reliability," 2021 International Conference on Electrical Machines and Systems, Gyeongju, Korea, 2021.</li>
+        <li><strong>Beopsoo Kim</strong>, Nikita Rusetskii, Konstantin Shusterzon, Denis Sidorov, and Insu Kim, "The Optimal Operation of Energy Storage System with Distributed Generators by Using Data-based Prediction Method," 2021 52nd KIEE Summer Conference, Gangwon-do, Korea, 2021, in Korean.</li>
+        <li>Jong-Ho Won, Ji-Won Lee, <strong>Beopsoo Kim</strong>, and Insu Kim, "The Calculation of Three-phase Line Impedance Using An Approximated Model of Carson's Formula for Ground Return Impedance," 2021 52nd KIEE Summer Conference, Gangwon-do, Korea, 2021, in Korean.</li>
+        <li>Byeonggwan Ahn, <strong>Beopsoo Kim</strong>, Haesung Jo, and Insu Kim, "A Study on the Fault Diagnosis of Wind Turbines using SVM based on Cross Validation," 2021 KIEE Spring Conference, Jeju, Korea, 2021.</li>
+        <li>Youngjae Kim, <strong>Beopsoo Kim</strong>, and Insu Kim, "A Study on Optimizing Underground Cable Maintenance and Replacement Cycles," 2021 KIEE Spring Conference, Jeju, Korea, 2021.</li>
+        <li><strong>Beopsoo Kim</strong>, Nikita Rusetskii, Haesung Jo, and Insu Kim, "Optimal Distributed Generation Selection Using Particle Swarm Optimization," 2020 International Conference on Electric-Vehicle, Smart Grid and Information Technology, Jeju, Korea, 2020.</li>
+        <li><strong>Beopsoo Kim</strong>, Haesung Jo, and Insu Kim, "A Study Inverter-based Fault Current Analysis for The Optimization of Distributed Generator Location," 51st 2020 KIEE Summer Conference, Busan, Korea, 2020, in Korean.</li>
+        <li>Haesung Jo, <strong>Beopsoo Kim</strong>, and Insu Kim, "A Study on The Optimization Scheduling of Combined Heat and Power System," 51st 2020 KIEE Summer Conference, Busan, Korea, 2020, in Korean.</li>
+        <li>Haksoon Im, <strong>Beopsoo Kim</strong>, and Insu Kim, "A Study on Optimal Transformer Maintenance Scheduling," 2019 KIIEE Fall Conference, Incheon, Korea, 2019, in Korean.</li>
+        <li><strong>Beopsoo Kim</strong> and Insu Kim, "Optimization of Distributed Generators Considering Fault Current and Installation Costs," 50th 2019 KIEE Summer Conference, Gangwon-do, Korea, 2019, in Korean.</li>
+    </ol>
+</div>

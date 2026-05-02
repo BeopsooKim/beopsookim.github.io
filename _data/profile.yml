@@ -1,0 +1,67 @@
+primary_name: "Beopsoo Kim"
+secondary_name: ""
+navbar_name: "Beopsoo Kim"
+
+positions:
+- name: Ph.D. Candidate
+- name: Department of Electrical and Computer Engineering, Inha University
+
+email: "contact.beopsoo.kim@gmail.com"
+cv_link: /assets/files/beopsoo-kim-cv.pdf
+gscholar: paV6M74AAAAJ
+github: BeopsooKim
+orcid: 0000-0002-2529-4098
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a Ph.D. candidate in the Department of Electrical and Computer Engineering at
+    <a href="https://eng.inha.ac.kr/eng/index.do" target="_blank">Inha University</a>, advised by
+    <a href="https://sites.google.com/view/inhapower/members/professor" target="_blank">Prof. Insu Kim</a>.
+    My research focuses on analysis, optimization, control, and resilience of modern power distribution systems.
+  </p>
+  <p>
+    I work on AC-DC hybrid power grids, microgrids, distributed energy resources, power-flow and fault analysis,
+    and AI/optimization methods for power-grid resilience. I am a researcher in the
+    <a href="https://sites.google.com/view/inhapower/home" target="_blank">Intelligent Power Grid Lab</a>.
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+
+education:
+- name: Inha University
+  logo: /assets/images/logos/inha-university-emblem.png
+  position: >-
+    Department of Electrical and Computer Engineering <br/>
+    Ph.D. Candidate
+  date: Aug. 2020 - Aug. 2026 (expected)
+- name: Inha University
+  logo: /assets/images/logos/inha-university-emblem.png
+  position: B.S. in Electrical Engineering
+  date: Mar. 2013 - Aug. 2020
+
+experience:
+- name: Inha University
+  logo: /assets/images/logos/inha-university-emblem.png
+  position: Research Assistant, Department of Electrical and Computer Engineering
+  date: Aug. 2020 - Present
+- name: Inha University
+  logo: /assets/images/logos/inha-university-emblem.png
+  position: Research Intern, Department of Electrical Engineering
+  date: Jan. 2019 - Aug. 2020
+
+awards:
+- name: Bronze Medal Paper, IEEE Seoul Section Student Paper Contest
+  date: 2025
+- name: Outstanding Research Award, Inha University Graduate School
+  date: 2025
+- name: Outstanding Research Award, BK21 Research and Education Group of Inha University
+  date: 2024
+- name: Bronze Medal Paper, IEEE Seoul Section Student Paper Contest
+  date: 2023
+- name: Best Paper Award, KIEE Electric Power Technology Section
+  date: 2023
+- name: Inha Vision Scholarship
+  date: 2022
+- name: Excellence Award, KIEE Graduate Students' Outstanding Paper Session
+  date: 2021

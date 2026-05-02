@@ -1,22 +1,13 @@
-# main links links
-main:
-  - title: "Publications"
-    url: /publications/
-
-  - title: "News"
-    url: /news/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+pages:
+- name: Home
+  url: /
+- name: Publications
+  url: /publications/
+- name: Research
+  url: /research/
+- name: Achievements
+  url: /achievements/
+- name: News
+  url: /news/
+- name: CV
+  url: /cv/

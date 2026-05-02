@@ -1,0 +1,41 @@
+---
+layout: default
+title: Research
+navbar_title: Research
+container_class: container-xl
+---
+
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <h1 class="h3">Research Topics</h1>
+                <p class="mb-0">
+                    My research develops analysis, optimization, and control methods for resilient power distribution
+                    systems with AC-DC hybrid grids, distributed energy resources, microgrids, and AI-assisted operation.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% assign cards_by_group = site.showcase | sort: "date" | where: "show", true | group_by_exp: "item", "item.group" %}
+
+{% for group in cards_by_group %}
+<h2 class="pt-4">{{ group.name }}</h2>
+<div class="row grid mb-4">
+    <div class="grid-sizer col-1"></div>
+    {% for item in group.items %}
+    <div class="p-2 grid-item col-md-{{ item.width | default: 6 }} col-sm-12 col-12">
+        <div class="card border-0 shadow-sm bg-white">
+            {% if item.image %}
+            <img data-src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="lazy w-100 research-card-image rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+            {% endif %}
+            <div class="card-body">
+                {{ item.content }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}

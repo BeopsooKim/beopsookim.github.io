@@ -1,2 +1,15 @@
 _site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+Gemfile.lock
+tmp/
+assets/images/logos/inha-university-emblem.jpg
 
+.DS_Store
+
+# Do not publish reference-bearing CV PDFs.
+*_W_Reference.pdf
+*W_Reference*.pdf
