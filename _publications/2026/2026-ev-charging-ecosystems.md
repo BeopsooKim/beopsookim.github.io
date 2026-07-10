@@ -4,7 +4,7 @@ date: 2026-03-01 00:00:00 +0900
 selected: true
 pub: "Energy Strategy Reviews"
 pub_date: "2026"
-cover: /assets/images/publications/2026-ev-charging-ecosystems.png
+cover: /assets/images/publications/2026-ev-charging-ecosystems.webp
 google_scholar_citations: 0
 google_scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=paV6M74AAAAJ&pagesize=100&citation_for_view=paV6M74AAAAJ:qUcmZB5y_30C"
 citation_snapshot_date: 2026-05-02

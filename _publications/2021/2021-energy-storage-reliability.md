@@ -4,7 +4,7 @@ date: 2021-12-01 00:00:00 +0900
 selected: false
 pub: "The Transactions of the Korean Institute of Electrical Engineers"
 pub_date: "2021"
-cover: /assets/images/publications/2021-energy-storage-reliability.png
+cover: /assets/images/publications/2021-energy-storage-reliability.webp
 google_scholar_citations: 1
 google_scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=paV6M74AAAAJ&pagesize=100&citation_for_view=paV6M74AAAAJ:mVmsd5A6BfQC"
 citation_snapshot_date: 2026-05-02

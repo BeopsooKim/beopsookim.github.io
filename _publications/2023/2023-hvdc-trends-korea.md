@@ -4,7 +4,7 @@ date: 2023-02-01 00:00:00 +0900
 selected: false
 pub: "The Transactions of the Korean Institute of Electrical Engineers"
 pub_date: "2023"
-cover: /assets/images/publications/2023-hvdc-trends-korea.png
+cover: /assets/images/publications/2023-hvdc-trends-korea.webp
 google_scholar_citations: 7
 google_scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=paV6M74AAAAJ&pagesize=100&citation_for_view=paV6M74AAAAJ:9ZlFYXVOiuMC"
 citation_snapshot_date: 2026-05-02

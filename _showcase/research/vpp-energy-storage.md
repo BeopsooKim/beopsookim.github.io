@@ -4,7 +4,7 @@ group: "Power Grid Research"
 date: 2026-01-04
 show: true
 width: 6
-image: /assets/images/research/vpp-energy-storage.png
+image: /assets/images/research/vpp-energy-storage.webp
 ---
 
 <h3 class="h5">Virtual Power Plants and Energy Storage</h3>
