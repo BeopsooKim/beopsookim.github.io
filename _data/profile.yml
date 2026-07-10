@@ -18,11 +18,15 @@ short_bio: >-
     I am a Ph.D. candidate in the Department of Electrical and Computer Engineering at
     <a href="https://eng.inha.ac.kr/eng/index.do" target="_blank">Inha University</a>, advised by
     <a href="https://sites.google.com/view/inhapower/members/professor" target="_blank">Prof. Insu Kim</a>.
-    My research focuses on analysis, optimization, control, and resilience of modern power distribution systems.
+    I completed the doctoral defense and final review process in June-July 2026,
+    and the degree is expected to be conferred in August 2026.
+    My doctoral research develops a sequential procedure that carries the converged AC-DC operating point
+    from power-flow analysis into fault and harmonic studies for converter-interfaced hybrid grids.
   </p>
   <p>
-    I work on AC-DC hybrid power grids, microgrids, distributed energy resources, power-flow and fault analysis,
-    and AI/optimization methods for power-grid resilience. I am a researcher in the
+    My broader work includes microgrids and distributed energy resources, protection and fault analysis,
+    energy-storage and virtual-power-plant operation, and AI and optimization methods for grid resilience.
+    I implement these studies with MATLAB, Python, and PLC-based measurement and control systems in the
     <a href="https://sites.google.com/view/inhapower/home" target="_blank">Intelligent Power Grid Lab</a>.
   </p>
 
@@ -47,6 +51,10 @@ experience:
   date: Aug. 2020 - Present
 - name: Inha University
   logo: /assets/images/logos/inha-university-emblem.png
+  position: Teaching Assistant, Department of Electrical and Computer Engineering
+  date: 2020-2021, 2023-2026
+- name: Inha University
+  logo: /assets/images/logos/inha-university-emblem.png
   position: Research Intern, Department of Electrical Engineering
   date: Jan. 2019 - Aug. 2020
 
@@ -61,6 +69,10 @@ awards:
   date: 2023
 - name: Best Paper Award, KIEE Electric Power Technology Section
   date: 2023
+- name: Excellence Prize, Graduate Course Extracurricular Program Design Competition
+  date: 2023
+- name: Gold Prize, Undergraduate Course Curriculum Design Competition
+  date: 2022
 - name: Inha Vision Scholarship
   date: 2022
 - name: Excellence Award, KIEE Graduate Students' Outstanding Paper Session
