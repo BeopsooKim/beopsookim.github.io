@@ -4,7 +4,7 @@ group: "Power Grid Research"
 date: 2026-01-01
 show: true
 width: 6
-image: /assets/images/research/ac-dc-hybrid-grids.png
+image: /assets/images/research/ac-dc-hybrid-grids.webp
 ---
 
 <h3 class="h5">AC-DC Hybrid Power Grid Analysis</h3>

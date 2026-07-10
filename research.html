@@ -30,7 +30,7 @@ container_class: container-xl
     <div class="p-2 grid-item col-md-{{ item.width | default: 6 }} col-sm-12 col-12">
         <div class="card border-0 shadow-sm bg-white">
             {% if item.image %}
-            <img data-src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="lazy w-100 research-card-image rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+            <img src="{{ item.image | relative_url }}" alt="" aria-hidden="true" width="1200" height="675" loading="lazy" decoding="async" class="w-100 research-card-image rounded-xl-top">
             {% endif %}
             <div class="card-body">
                 {{ item.content }}

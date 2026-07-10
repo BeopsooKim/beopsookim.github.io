@@ -4,7 +4,7 @@ group: "Power Grid Research"
 date: 2026-01-02
 show: true
 width: 6
-image: /assets/images/research/ai-grid-resilience.png
+image: /assets/images/research/ai-grid-resilience.webp
 ---
 
 <h3 class="h5">AI and Optimization for Grid Resilience</h3>

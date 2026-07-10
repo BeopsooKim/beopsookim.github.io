@@ -4,7 +4,7 @@ group: "Power Grid Research"
 date: 2026-01-03
 show: true
 width: 6
-image: /assets/images/research/microgrids-der.png
+image: /assets/images/research/microgrids-der.webp
 ---
 
 <h3 class="h5">Microgrids and Distributed Energy Resources</h3>
