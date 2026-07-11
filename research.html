@@ -24,15 +24,14 @@ container_class: container-xl
 
 {% for group in cards_by_group %}
 <h2 class="pt-4">{{ group.name }}</h2>
-<div class="row grid mb-4">
-    <div class="grid-sizer col-1"></div>
+<div class="row research-card-grid">
     {% for item in group.items %}
-    <div class="p-2 grid-item col-md-{{ item.width | default: 6 }} col-sm-12 col-12">
-        <div class="card border-0 shadow-sm bg-white">
+    <div class="col-12 col-md-{{ item.width | default: 6 }} d-flex mb-4">
+        <div class="card border-0 shadow-sm bg-white w-100 research-card">
             {% if item.image %}
             <img src="{{ item.image | relative_url }}" alt="" aria-hidden="true" width="1200" height="675" loading="lazy" decoding="async" class="w-100 research-card-image rounded-xl-top">
             {% endif %}
-            <div class="card-body">
+            <div class="card-body d-flex flex-column research-card-body">
                 {{ item.content }}
             </div>
         </div>
