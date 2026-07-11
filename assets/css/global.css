@@ -65,9 +65,9 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .publication-cover-image {
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-    min-height: auto;
+    display: block;
+    height: auto;
+    object-fit: contain;
 }
 
 .publication-abstract summary {
@@ -76,9 +76,9 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .research-card-image {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    min-height: auto;
+    display: block;
+    height: auto;
+    object-fit: contain;
 }
 
 .abstract-body {
