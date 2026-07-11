@@ -77,8 +77,24 @@ h1, h2, h3, h4, h5, h6,
 
 .research-card-image {
     display: block;
+    flex: 0 0 auto;
     height: auto;
     object-fit: contain;
+}
+
+.research-card {
+    overflow: hidden;
+}
+
+.research-card-body > :last-child {
+    margin-top: auto !important;
+    padding-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .research-card-body > h3:first-child {
+        min-height: 2.4em;
+    }
 }
 
 .abstract-body {
