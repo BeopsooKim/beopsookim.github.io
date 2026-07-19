@@ -5,9 +5,9 @@ selected: true
 pub: "Energy Reports"
 pub_date: "2023"
 cover: /assets/images/publications/2023-data-center-hybrid-power-system.webp
-google_scholar_citations: 9
+google_scholar_citations: 10
 google_scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=paV6M74AAAAJ&pagesize=100&citation_for_view=paV6M74AAAAJ:_kc_bZDykSQC"
-citation_snapshot_date: 2026-05-02
+citation_snapshot_date: 2026-07-19
 abstract: >-
   A stand-alone hybrid power system case study for data-center operation using HOMER and DIgSILENT.
 authors:

@@ -1,8 +1,47 @@
 @charset "utf-8";
+
+:root {
+    color-scheme: light;
+    --page-bg: #f8f9fa;
+    --surface-bg: #ffffff;
+    --surface-muted: #f8f9fa;
+    --text-primary: #212529;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --navbar-bg: rgba(255, 255, 255, 0.82);
+    --link-color: #0069d9;
+    --link-hover-color: #004f9f;
+    --shadow-color: rgba(0, 0, 0, 0.10);
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --page-bg: #11151b;
+    --surface-bg: #1a2029;
+    --surface-muted: #222a35;
+    --text-primary: #e6edf3;
+    --text-muted: #a7b0bc;
+    --border-color: #35404d;
+    --navbar-bg: rgba(17, 21, 27, 0.88);
+    --link-color: #79b8ff;
+    --link-hover-color: #a8d1ff;
+    --shadow-color: rgba(0, 0, 0, 0.32);
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding-top: 5.0rem;
+    background-color: var(--page-bg) !important;
+    color: var(--text-primary);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -32,7 +71,6 @@ h1, h2, h3, h4, h5, h6,
     border-top-right-radius: 0.8rem !important;
 }
 
-
 .text-profile-position {
     font-weight: 400;
 }
@@ -43,9 +81,34 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.6) !important;
+    background-color: var(--navbar-bg) !important;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.35rem;
+    height: 2.35rem;
+    padding: 0;
+    color: var(--text-primary);
+    background: var(--surface-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+    color: var(--link-color);
+    border-color: var(--link-color);
+    outline: none;
+}
+
+.theme-toggle:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(0, 105, 217, 0.25);
 }
 
 .inline-badge {
@@ -72,7 +135,7 @@ h1, h2, h3, h4, h5, h6,
 
 .publication-abstract summary {
     cursor: pointer;
-    color: #0069d9;
+    color: var(--link-color);
 }
 
 .research-card-image {
@@ -123,4 +186,88 @@ div.lazy {
 
 .email-text {
     font-family: Source Code Pro, monospace;
+}
+
+html[data-theme="dark"] .bg-white,
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .modal-content,
+html[data-theme="dark"] .row.no-gutters.d-md-none > .w-100 {
+    background-color: var(--surface-bg) !important;
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .bg-light,
+html[data-theme="dark"] .badge-light {
+    background-color: var(--surface-muted) !important;
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .text-muted {
+    color: var(--text-muted) !important;
+}
+
+html[data-theme="dark"] .border,
+html[data-theme="dark"] .border-top,
+html[data-theme="dark"] .border-bottom,
+html[data-theme="dark"] .border-left,
+html[data-theme="dark"] .border-right,
+html[data-theme="dark"] hr {
+    border-color: var(--border-color) !important;
+}
+
+html[data-theme="dark"] .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem var(--shadow-color) !important;
+}
+
+html[data-theme="dark"] .navbar-light .navbar-brand,
+html[data-theme="dark"] .navbar-light .navbar-nav .nav-link,
+html[data-theme="dark"] .navbar-light .navbar-toggler {
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .navbar-light .navbar-nav .nav-link:hover,
+html[data-theme="dark"] .navbar-light .navbar-nav .nav-link:focus,
+html[data-theme="dark"] .navbar-light .navbar-nav .active > .nav-link {
+    color: var(--link-color);
+}
+
+html[data-theme="dark"] .navbar-light .navbar-toggler {
+    border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .table {
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .table th,
+html[data-theme="dark"] .table td {
+    border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .form-control,
+html[data-theme="dark"] .custom-select {
+    color: var(--text-primary);
+    background-color: var(--surface-muted);
+    border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .img-thumbnail {
+    background-color: var(--surface-muted);
+    border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .close {
+    color: var(--text-primary);
+    text-shadow: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    body,
+    .navbar,
+    .card,
+    .footer,
+    .theme-toggle,
+    .badge-light {
+        transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+    }
 }
